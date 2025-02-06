@@ -8,7 +8,6 @@ model = load_model('./fashion_mnist.keras')  # Asegúrate de tener la ruta corre
 
 # Crear interface de usuario
 st.title("Clasificador Fashion MNIST")
-st.write("Sube una imagen para clasificarla como una categoría de ropa")
 
 uploaded_file = st.file_uploader("Sube una imagen en escala de grises 28x28 píxeles", type=["png", "jpg", "jpeg"])
 
