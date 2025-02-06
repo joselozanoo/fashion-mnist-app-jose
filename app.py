@@ -27,7 +27,7 @@ if uploaded_file is not None:
     # Predicción
     prediction = model.predict(image_array)
     classes = ['Camiseta/Top', 'Pantalón', 'Suéter', 'Vestido', 'Abrigo', 'Sandalia', 'Camisa', 'Zapatilla', 'Mochila', 'Bota hasta el tobillo']
-    st.write = ("Predicción: " [np.argmax(prediction)])
+    st.write("Predicción: ", classes[np.argmax(prediction)])
 
     #Mostrar Predicción
     st.write("Predicción: ", classes[np.argmax(prediction)])
