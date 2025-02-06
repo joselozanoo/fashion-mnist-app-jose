@@ -3,12 +3,12 @@ from tensorflow.keras.models import load_model
 from PIL import Image
 import numpy as np
 
-# Cargar el modelo
-model = load_model('./fashion_mnist.keras')
+# Cargar el modelo previamente entrenado
+model = load_model('./fashion_mnist_model.keras')  # Asegúrate de tener la ruta correcta al modelo
 
-# Crear la interfaz de usuario
-st.title("🛍️ Clasificador Fashion MNIST")
-st.write("Sube una imagen para clasificarla como una categoría de ropa.")
+# Crear interface de usuario
+st.title("Clasificador Fashion MNIST")
+st.write("Sube una imagen para clasificarla como una categoría de ropa")
 
 uploaded_file = st.file_uploader("Sube una imagen en escala de grises 28x28 píxeles", type=["png", "jpg", "jpeg"])
 
